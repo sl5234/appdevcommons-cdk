@@ -7,11 +7,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'appdevcommons-cdk',
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/smin.lee5234/appdevcommons-cdk.git',
+  repositoryUrl: 'https://github.com/sl5234/appdevcommons-cdk.git',
 
-  // defaultReleaseBranch: "main",  /* The name of the main release branch. */
+  defaultReleaseBranch: 'main',
+  description: 'Shared CDK constructs for deploying common app infrastructure across AWS accounts',
   // deps: [],                      /* Runtime dependencies of this module. */
-  // description: undefined,        /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],                   /* Build dependencies for this module. */
   // packageName: undefined,        /* The "name" in package.json. */
 });

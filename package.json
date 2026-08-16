@@ -1,8 +1,9 @@
 {
   "name": "appdevcommons-cdk",
+  "description": "Shared CDK constructs for deploying common app infrastructure across AWS accounts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smin.lee5234/appdevcommons-cdk.git"
+    "url": "https://github.com/sl5234/appdevcommons-cdk.git"
   },
   "scripts": {
     "build": "projen build",
