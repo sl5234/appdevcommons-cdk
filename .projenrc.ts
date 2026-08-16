@@ -12,7 +12,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   description: 'Shared CDK constructs for deploying common app infrastructure across AWS accounts',
   // deps: [],                      /* Runtime dependencies of this module. */
-  // devDeps: [],                   /* Build dependencies for this module. */
+  devDeps: ['esbuild'], /* needed to bundle NodejsFunction constructs during local build/test */
   // packageName: undefined,        /* The "name" in package.json. */
 });
 project.synth();
