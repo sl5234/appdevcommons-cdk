@@ -14,5 +14,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // deps: [],                      /* Runtime dependencies of this module. */
   devDeps: ['esbuild'], /* needed to bundle NodejsFunction constructs during local build/test */
   // packageName: undefined,        /* The "name" in package.json. */
+  docgen: false, /* API.md is redundant with TS types/JSDoc for a small library */
+
+  // Publish via npm Trusted Publishing (OIDC) instead of a long-lived NPM_TOKEN secret.
+  // Needs to be configured on npmjs.com for this repo/workflow first.
+  npmTrustedPublishing: true,
 });
 project.synth();
